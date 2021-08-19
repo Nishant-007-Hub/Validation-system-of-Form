@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Welcome to Form validation</title>
+</head>
+
+<body>
+
+<div class="container py-3">
+  <header>
+    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+      
+    </div>
+
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+<div  id="msg" class="container-fluid">
+
+</div>
+      <h1 class="display-4 fw-normal">Welcome to Form validation</h1>
+    </div>
+  </header>
+
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="name">Username</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your username">
+                <div class="invalid-feedback">
+                    Your username must be 3-10 characters long and should not start with a number </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter your email">
+                <div class="invalid-feedback">
+                    Your email must be a valid email
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="car">Select your car</label>
+                <select class="form-control" id="car">
+                    <option>Omni</option>
+                    <option>Maruti 800</option>
+                    <option>Ford Titanium</option>
+                    <option>Audi A4</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Enter your address</label>
+                <textarea class="form-control" name="address" id="address" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Enter your phone number</label>
+                <input class="form-control" name="phone" id="phone" rows="3">
+                <div class="invalid-feedback">
+                   Invalid-Input Your phone number must be 10 digit long
+                </div>
+            </div>
+
+            <button id="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
